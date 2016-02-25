@@ -4,7 +4,7 @@ Essential command-line tools for exploring data for Code for Boston.
 
 # Dependencies
 
-We assume you are using a Mac and have [Homebrew](http://coolestguidesontheplanet.com/installing-homebrew-os-x-yosemite-10-10-package-manager-unix-apps/) installed.
+We assume you are using a Mac and have [Homebrew](http://brew.sh/) installed.
 
 ```
 brew install jq
@@ -30,6 +30,7 @@ brew install python3
 ```
 
 ```
+pip install virtualenv
 virtualenv --python=/usr/local/bin/python3 science.env
 # activate the new environment
 source science.env/bin/activate
