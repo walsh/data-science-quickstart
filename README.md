@@ -7,7 +7,6 @@ through the
 [City of Boston's Data Portal](https://data.cityofboston.gov/) or
 [Cambridge Open Data](https://data.cambridgema.gov/). 
 
-
 ## Example: Cambridge Parking Tickets: Top Violations
 
     $ cat tmp/Cambridge_Parking_Tickets_*.csv | csvcut -c 5 | sort | uniq -c | sort -rn | head -n 8
@@ -26,11 +25,18 @@ This workshop was created for
 [Code for Boston](www.meetup.com/Code-for-Boston/) and 
 [Massachusetts Legal Hackers](http://www.meetup.com/Massachusetts-Legal-Hackers/). 
 
+# Topics 
+
++ cat -- concatenate and print files
++ grep -- file pattern searcher
++ awk -- pattern-directed scanning and processing language
++ cut -- cut out selected portions of each line of a file
++ sort - sort lines of text files
++ uniq -- report or filter out repeated lines in a file
 
 # Contributing
 
 Pull Requests are welcome!
-
 
 # Resources 
 
