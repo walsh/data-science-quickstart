@@ -1,6 +1,42 @@
 # Data Science Quickstart
 
-Essential command-line tools for exploring data for Code for Boston. 
+Essential command-line tools for exploring data for Code for Boston and
+Massachusetts Legal Hackers.  This is an introductory course designed
+for those just starting to explore some of the open data sets provided
+through the
+[City of Boston's Data Portal](https://data.cityofboston.gov/) or
+[Cambridge Open Data](https://data.cambridgema.gov/). 
+
+## Example: Cambridge Parking Tickets: Top Violations
+
+    $ cat tmp/Cambridge_Parking_Tickets_*.csv | csvcut -c 5 | sort | uniq -c | sort -rn | head -n 8
+    310955 METER EXPIRED
+    47956 OVERTIME
+    43464 RESIDENT PERMIT ONLY
+    16380 NO STOPPING
+    12065 STREET CLEANING
+    10548 NO PARKING
+    9496 LOADING ZONE
+    2471 STORAGE
+
+## Massachusetts Legal Hackers
+
+This workshop was created for
+[Code for Boston](www.meetup.com/Code-for-Boston/) and 
+[Massachusetts Legal Hackers](http://www.meetup.com/Massachusetts-Legal-Hackers/). 
+
+# Topics 
+
++ cat -- concatenate and print files
++ grep -- file pattern searcher
++ awk -- pattern-directed scanning and processing language
++ cut -- cut out selected portions of each line of a file
++ sort - sort lines of text files
++ uniq -- report or filter out repeated lines in a file
+
+# Contributing
+
+Pull Requests are welcome!
 
 # Dependencies
 
